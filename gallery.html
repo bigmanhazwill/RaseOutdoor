@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html >
-  <head>
-	  
-	<script type="text/javascript" src="menu.js"></script>
-	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
-
-    <meta name="viewport" content="initial-scale=1">
+<html>
+  	<head> 
+		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<meta name="viewport" content="initial-scale=1">
 		<link rel="icon" href="iconSmall.png">
 		<link rel="stylesheet" type="text/css" href="style10.css">
-    <link rel="stylesheet" href="optimized_contents/css/style.css">
+		<link rel="stylesheet" href="optimized_contents/css/style.css">
 		<link rel="stylesheet" href="optimized_contents/css/style1.css">
 		<link rel="stylesheet" href="optimized_contents/css/style2.css">
 		<link rel="stylesheet" href="optimized_contents/css/style3.css">
 		<link rel="stylesheet" href="slideshow.css">
-    <title>Aluminium Pergola - Pergola with rotating louvres</title>
-    <meta name="keywords" content="pergola, awning, parasol, Boston, Spalding, Skegness, Horncastle, Sleaford, Lincoln, Peterborough, Wisbech, Kings, Lynn, Grantham, Stamford, Alford, Mablethorpe, Louth, Grimsby">
-    <meta name="description" content="pergola, parasol and awning suppliers in Lincolnshire, Cambridgeshire, Nottinghamshire; parts of Norfolk, Derbyshire, Yorkshire, Leicestershire, Northamptonshire &amp; Suffolk. Rase Outdoor Living creates garden pergolas, awning and parasols that cater to your needs; we ensure that our products will be designed uniquely to your outdoor space.">
+		
+		<title>Aluminium Pergola - Pergola with rotating louvres</title>
+		<meta name="keywords" content="pergola, awning, parasol, Boston, Spalding, Skegness, Horncastle, Sleaford, Lincoln, Peterborough, Wisbech, Kings, Lynn, Grantham, Stamford, Alford, Mablethorpe, Louth, Grimsby">
+		<meta name="description" content="pergola, parasol and awning suppliers in Lincolnshire, Cambridgeshire, Nottinghamshire; parts of Norfolk, Derbyshire, Yorkshire, Leicestershire, Northamptonshire &amp; Suffolk. Rase Outdoor Living creates garden pergolas, awning and parasols that cater to your needs; we ensure that our products will be designed uniquely to your outdoor space.">
 		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-101620792-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-101620792-2', 'auto');
+			ga('send', 'pageview');
+		</script>
 		<script>
 			function openModal() {
 				document.getElementById('myModal').style.display = "block";
@@ -186,10 +183,12 @@
 
 	<nav class="gNav" id="topOfPage">
 		<a href="index.html" id="first"> HOME </a>
-		<a href="gallery.html" > GALLERY </a>
-		<a href="contact.html" > CONTACT </a>
-		<a href="products.html" > OUR PRODUCTS </a>
-		<div id="logoD"><img src="images/logo.png" id="logo"></div>
+		<a href="gallery.html"> GALLERY </a>
+		<a href="contact.html"> CONTACT </a>
+		<a href="products.html"> OUR PRODUCTS </a>
+		<div id="logoD">
+			<img src="images/logo.png" id="logo">
+		</div>
 		<a href="https://www.pinterest.co.uk/Contemporary_Pergolas/" class="socialI"><img src="images/pinterest.png" id="pinterest"></a>
 		<a href="https://www.instagram.com/raseoutdoor/" class="socialI"><img src="images/instagram.png" id="instagram"></a>
 		<a href="https://twitter.com/RaseOutdoor" class="socialI"><img src="images/twitter.png" id="twitter"></a>
@@ -208,59 +207,58 @@
 
 	<!-- <div onclick="closeFunction()" id="bO" style="position: fixed; z-index:8; height: 100vh; width: 100vw; top:0;"></div>
 	 -->
-  <script type="text/javascript">
-  $( document ).ready(function() {
+  	<script type="text/javascript">
+		$( document ).ready(function() {
+			$("#galleryButton").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#anchor").offset().top
+				}, 750);
+			});
+			
+			$(".returnButton").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#topOfPage").offset().top
+				}, 1000);
+			});
+			
+			$("#firstGallery").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#gardenGallery").offset().top
+				}, 750);
+			});
 
-    $("#galleryButton").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#anchor").offset().top
-        }, 750);
-        
-    });
-    
-    $(".returnButton").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#topOfPage").offset().top
-        }, 1000);
-    });
-    
-    $("#firstGallery").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#gardenGallery").offset().top
-        }, 750);
-    });
-
-  $("#secondGallery").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#jacuzziGallery").offset().top
-        }, 750);
-    });
-  
-	$("#thirdGallery").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#parasolGallery").offset().top
-        }, 750);
-    });
-	
-  $("#fourthGallery").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#businessGallery").offset().top
-        }, 750);
-    });
-
-  });
-  </script>
-  <main id="gallerySplash">
-    <div id="galleryLine"></div>
-    <h1 id="gallerySplashTitle">GALLERY</h1>
-    <a id="galleryButton" href="#anchor">VIEW</a>
+			$("#secondGallery").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#jacuzziGallery").offset().top
+				}, 750);
+			});
+		
+			$("#thirdGallery").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#parasolGallery").offset().top
+				}, 750);
+			});
+			
+			$("#fourthGallery").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#businessGallery").offset().top
+				}, 750);
+			});
+		});
+	</script>
+	  
+  	<main id="gallerySplash">
+    	<div id="galleryLine"></div>
+    	<h1 id="gallerySplashTitle">GALLERY</h1>
+    	<a id="galleryButton" href="#anchor">VIEW</a>
 	</main>
 	<img src="Pictures/galleryBackground.jpg" id="imgId"/>
-  <div id="anchor"></div>
-  <a id="firstGallery" href="#gardenGallery"><img class="transition" src="gallery_garden.jpg" id="leftGallery"/></a>
-  <a id="secondGallery" href="#jacuzziGallery"><img class="transition" src="gallery_jacuzzi.jpg" id="rightUp"/></a>
+	  <div id="anchor"></div>
+	  
+	<a id="firstGallery" href="#gardenGallery"><img class="transition" src="gallery_garden.jpg" id="leftGallery"/></a>
+	<a id="secondGallery" href="#jacuzziGallery"><img class="transition" src="gallery_jacuzzi.jpg" id="rightUp"/></a>
 	<a id="thirdGallery" href="#parasolGallery" ><img class="transition" src="gallery_parasol.jpg" id="parasolDisplay"/></a>
-  <a id="fourthGallery" href="#businessGallery" ><img class="transition" src="gallery_business.jpg" id="rightDown"/></a>
+	<a id="fourthGallery" href="#businessGallery" ><img class="transition" src="gallery_business.jpg" id="rightDown"/></a>
   
 	
 	<div id="gardenGallery">
@@ -278,44 +276,43 @@
 		<img src="Pictures/garden/11.jpg" onclick="openModal5();currentSlide5(11)" class="hover-shadow jacuzzi" id="J11">
 		<img src="Pictures/garden/12.jpg" onclick="openModal5();currentSlide5(12)" class="hover-shadow jacuzzi" id="J12">
 		<a href="#topOfPage" id="returnText">Return to Top</a>
-    <div class="galleryDivide"></div>
+    	<div class="galleryDivide"></div>
 	</div>
 
 	<div id="myModal5" class="modal">
 		<span class="close cursor" onclick="closeModal5()">&times;</span>
 		<div class="modal-content">
-	
 			<div class="mySlides5">
 				<div class="numbertext">1 / 12</div>
-					<img src="Pictures/garden/1.jpg" style="width:100%">
+				<img src="Pictures/garden/1.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides5">
 				<div class="numbertext">2 / 12</div>
-					<img src="Pictures/garden/2.jpg" style="width:100%">
+				<img src="Pictures/garden/2.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides5">
 				<div class="numbertext">3 / 12</div>
-					<img src="Pictures/garden/3.jpg" style="width:100%">
+				<img src="Pictures/garden/3.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides5">
 				<div class="numbertext">4 / 12</div>
-					<img src="Pictures/garden/4.jpg" style="width:100%">
+				<img src="Pictures/garden/4.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">5 / 12</div>
-					<img src="Pictures/garden/5.jpg" style="width:100%">
+				<img src="Pictures/garden/5.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">6 / 12</div>
-					<img src="Pictures/garden/6.jpg" style="width:100%">
+				<img src="Pictures/garden/6.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">7 / 12</div>
-					<img src="Pictures/garden/7.jpg" style="width:100%">
+				<img src="Pictures/garden/7.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">8 / 12</div>
-					<img src="Pictures/garden/8.jpg" style="width:100%">
+				<img src="Pictures/garden/8.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">9 / 12</div>
@@ -323,26 +320,25 @@
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">10 / 12</div>
-					<img src="Pictures/garden/10.jpg" style="width:100%">
+				<img src="Pictures/garden/10.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">11 / 12</div>
-					<img src="Pictures/garden/11.jpg" style="width:100%">
+				<img src="Pictures/garden/11.jpg" style="width:100%">
 			</div>
 			<div class="mySlides5">
 				<div class="numbertext">12 / 12</div>
-					<img src="Pictures/garden/12.jpg" style="width:100%">
+				<img src="Pictures/garden/12.jpg" style="width:100%">
 			</div>
 	
 			<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides5(1)">&#10095;</a>
-
 		</div>
 	</div>
 	
-  <div id="businessGallery">
-    <h1 id="jacuzziTitle">BUSINESS</h1>
-    <img src="Pictures/business/1.jpg" onclick="openModal2();currentSlide2(1)" class="hover-shadow jacuzzi" id="J1">
+  	<div id="businessGallery">
+   	 	<h1 id="jacuzziTitle">BUSINESS</h1>
+    	<img src="Pictures/business/1.jpg" onclick="openModal2();currentSlide2(1)" class="hover-shadow jacuzzi" id="J1">
 		<img src="Pictures/business/2.jpg" onclick="openModal2();currentSlide2(2)" class="hover-shadow jacuzzi" id="J2">
 		<img src="Pictures/business/3.jpg" onclick="openModal2();currentSlide2(3)" class="hover-shadow jacuzzi" id="J3">
 		<img src="Pictures/business/4.jpg" onclick="openModal2();currentSlide2(4)" class="hover-shadow jacuzzi" id="J4">
@@ -351,60 +347,58 @@
 		<img src="Pictures/business/7.jpg" onclick="openModal2();currentSlide2(7)" class="hover-shadow jacuzzi" id="J7">
 		<img src="Pictures/business/8.jpg" onclick="openModal2();currentSlide2(8)" class="hover-shadow jacuzzi" id="J8">
 		<img src="Pictures/business/9.jpg" onclick="openModal2();currentSlide2(9)" class="hover-shadow jacuzzi" id="J9">
-    <a href="#topOfPage" id="returnText">Return to Top</a>
-    <div class="galleryDivide"></div>
-  </div>
+		<a href="#topOfPage" id="returnText">Return to Top</a>
+		<div class="galleryDivide"></div>
+    </div>
 	
 	<div id="myModal2" class="modal">
 		<span class="close cursor" onclick="closeModal2()">&times;</span>
 		<div class="modal-content">
-	
 			<div class="mySlides2">
 				<div class="numbertext">1 / 9</div>
-					<img src="Pictures/business/1.jpg" style="width:100%">
+				<img src="Pictures/business/1.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides2">
 				<div class="numbertext">2 / 9</div>
-					<img src="Pictures/business/2.jpg" style="width:100%">
+				<img src="Pictures/business/2.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides2">
 				<div class="numbertext">3 / 9</div>
-					<img src="Pictures/business/3.jpg" style="width:100%">
+				<img src="Pictures/business/3.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides2">
 				<div class="numbertext">4 / 9</div>
-					<img src="Pictures/business/4.jpg" style="width:100%">
+				<img src="Pictures/business/4.jpg" style="width:100%">
 			</div>
 			<div class="mySlides2">
 				<div class="numbertext">5 / 9</div>
-					<img src="Pictures/business/5.jpg" style="width:100%">
+				<img src="Pictures/business/5.jpg" style="width:100%">
 			</div>
 			<div class="mySlides2">
 				<div class="numbertext">6 / 9</div>
-					<img src="Pictures/business/6.jpg" style="width:100%">
+				<img src="Pictures/business/6.jpg" style="width:100%">
 			</div>
 			<div class="mySlides2">
 				<div class="numbertext">7 / 9</div>
-					<img src="Pictures/business/7.jpg" style="width:100%">
+				<img src="Pictures/business/7.jpg" style="width:100%">
 			</div>
 			<div class="mySlides2">
 				<div class="numbertext">8 / 9</div>
-					<img src="Pictures/business/8.jpg" style="width:100%">
+				<img src="Pictures/business/8.jpg" style="width:100%">
 			</div>
 			<div class="mySlides2">
 				<div class="numbertext">9 / 9</div>
-					<img src="Pictures/business/9.jpg" style="width:100%">
+				<img src="Pictures/business/9.jpg" style="width:100%">
 			</div>
 	
 			<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides2(1)">&#10095;</a>
-
 		</div>
 	</div>
   
-  <div id="parasolGallery">
-    <h1 id="jacuzziTitle">PARASOLS</h1>
-    <img src="Pictures/umbrella/1.jpg" onclick="openModal3();currentSlide3(1)" class="hover-shadow jacuzzi" id="J1">
+ 	<div id="parasolGallery">
+   		<h1 id="jacuzziTitle">PARASOLS</h1>
+   		<img src="Pictures/umbrella/1.jpg" onclick="openModal3();currentSlide3(1)" class="hover-shadow jacuzzi" id="J1">
 		<img src="Pictures/umbrella/2.jpg" onclick="openModal3();currentSlide3(2)" class="hover-shadow jacuzzi" id="J2">
 		<img src="Pictures/umbrella/3.jpg" onclick="openModal3();currentSlide3(3)" class="hover-shadow jacuzzi" id="J3">
 		<img src="Pictures/umbrella/4.jpg" onclick="openModal3();currentSlide3(4)" class="hover-shadow jacuzzi" id="J4">
@@ -413,49 +407,48 @@
 		<img src="Pictures/umbrella/7.jpg" onclick="openModal3();currentSlide3(7)" class="hover-shadow jacuzzi" id="J7">
 		<img src="Pictures/umbrella/8.jpg" onclick="openModal3();currentSlide3(8)" class="hover-shadow jacuzzi" id="J8">
 		<img src="Pictures/umbrella/9.jpg" onclick="openModal3();currentSlide3(9)" class="hover-shadow jacuzzi" id="J9">
-    <a href="#topOfPage" id="returnText">Return to Top</a>
-    <div class="galleryDivide"></div>
-  </div>
+   		<a href="#topOfPage" id="returnText">Return to Top</a>
+    	<div class="galleryDivide"></div>
+  	</div>
 	
 	<div id="myModal3" class="modal">
 		<span class="close cursor" onclick="closeModal3()">&times;</span>
 		<div class="modal-content">
-	
 			<div class="mySlides3">
 				<div class="numbertext">1 / 9</div>
-					<img src="Pictures/umbrella/1.jpg" style="width:100%">
+				<img src="Pictures/umbrella/1.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides3">
 				<div class="numbertext">2 / 9</div>
-					<img src="Pictures/umbrella/2.jpg" style="width:100%">
+				<img src="Pictures/umbrella/2.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides3">
 				<div class="numbertext">3 / 9</div>
-					<img src="Pictures/umbrella/3.jpg" style="width:100%">
+				<img src="Pictures/umbrella/3.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides3">
 				<div class="numbertext">4 / 9</div>
-					<img src="Pictures/umbrella/4.jpg" style="width:100%">
+				<img src="Pictures/umbrella/4.jpg" style="width:100%">
 			</div>
 			<div class="mySlides3">
 				<div class="numbertext">5 / 9</div>
-					<img src="Pictures/umbrella/5.jpg" style="width:100%">
+				<img src="Pictures/umbrella/5.jpg" style="width:100%">
 			</div>
 			<div class="mySlides3">
 				<div class="numbertext">6 / 9</div>
-					<img src="Pictures/umbrella/6.jpg" style="width:100%">
+				<img src="Pictures/umbrella/6.jpg" style="width:100%">
 			</div>
 			<div class="mySlides3">
 				<div class="numbertext">7 / 9</div>
-					<img src="Pictures/umbrella/7.jpg" style="width:100%">
+				<img src="Pictures/umbrella/7.jpg" style="width:100%">
 			</div>
 			<div class="mySlides3">
 				<div class="numbertext">8 / 9</div>
-					<img src="Pictures/umbrella/8.jpg" style="width:100%">
+				<img src="Pictures/umbrella/8.jpg" style="width:100%">
 			</div>
 			<div class="mySlides3">
 				<div class="numbertext">9 / 9</div>
-					<img src="Pictures/umbrella/9.jpg" style="width:100%">
+				<img src="Pictures/umbrella/9.jpg" style="width:100%">
 			</div>
 	
 			<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
@@ -464,9 +457,9 @@
 		</div>
 	</div>
   
-  <div id="jacuzziGallery">
-    <h1 id="jacuzziTitle">JACUZZI & POOL</h1>
-    <img src="Pictures/jacuzzi/1.jpg" onclick="openModal4();currentSlide4(1)" class="hover-shadow jacuzzi" id="J1">
+  	<div id="jacuzziGallery">
+		<h1 id="jacuzziTitle">JACUZZI & POOL</h1>
+		<img src="Pictures/jacuzzi/1.jpg" onclick="openModal4();currentSlide4(1)" class="hover-shadow jacuzzi" id="J1">
 		<img src="Pictures/jacuzzi/2.jpg" onclick="openModal4();currentSlide4(2)" class="hover-shadow jacuzzi" id="J2">
 		<img src="Pictures/jacuzzi/3.jpg" onclick="openModal4();currentSlide4(3)" class="hover-shadow jacuzzi" id="J3">
 		<img src="Pictures/jacuzzi/4.jpg" onclick="openModal4();currentSlide4(4)" class="hover-shadow jacuzzi" id="J4">
@@ -475,54 +468,52 @@
 		<img src="Pictures/jacuzzi/7.jpg" onclick="openModal4();currentSlide4(7)" class="hover-shadow jacuzzi" id="J7">
 		<img src="Pictures/jacuzzi/8.jpg" onclick="openModal4();currentSlide4(8)" class="hover-shadow jacuzzi" id="J8">
 		<img src="Pictures/jacuzzi/9.jpg" onclick="openModal4();currentSlide4(9)" class="hover-shadow jacuzzi" id="J9">
-    <a href="#topOfPage" id="returnText">Return to Top</a>
-    <div class="galleryDivide"></div>
-  </div>
+		<a href="#topOfPage" id="returnText">Return to Top</a>
+		<div class="galleryDivide"></div>
+  	</div>
 	
 	<div id="myModal4" class="modal">
 		<span class="close cursor" onclick="closeModal4()">&times;</span>
 		<div class="modal-content">
-	
 			<div class="mySlides4">
 				<div class="numbertext">1 / 9</div>
-					<img src="Pictures/jacuzzi/1.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/1.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides4">
 				<div class="numbertext">2 / 9</div>
-					<img src="Pictures/jacuzzi/2.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/2.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides4">
 				<div class="numbertext">3 / 9</div>
-					<img src="Pictures/jacuzzi/3.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/3.jpg" style="width:100%">
 			</div>	
 			<div class="mySlides4">
 				<div class="numbertext">4 / 9</div>
-					<img src="Pictures/jacuzzi/4.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/4.jpg" style="width:100%">
 			</div>
 			<div class="mySlides4">
 				<div class="numbertext">5 / 9</div>
-					<img src="Pictures/jacuzzi/5.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/5.jpg" style="width:100%">
 			</div>
 			<div class="mySlides4">
 				<div class="numbertext">6 / 9</div>
-					<img src="Pictures/jacuzzi/6.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/6.jpg" style="width:100%">
 			</div>
 			<div class="mySlides4">
 				<div class="numbertext">7 / 9</div>
-					<img src="Pictures/jacuzzi/7.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/7.jpg" style="width:100%">
 			</div>
 			<div class="mySlides4">
 				<div class="numbertext">8 / 9</div>
-					<img src="Pictures/jacuzzi/8.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/8.jpg" style="width:100%">
 			</div>
 			<div class="mySlides4">
 				<div class="numbertext">9 / 9</div>
-					<img src="Pictures/jacuzzi/9.jpg" style="width:100%">
+				<img src="Pictures/jacuzzi/9.jpg" style="width:100%">
 			</div>
 	
 			<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides4(1)">&#10095;</a>
-
 		</div>
 	</div>
 	
@@ -532,36 +523,33 @@
 		<p id="footer_number"> 07777 630 926 </p>
 	</div>
   
-  <div id="footer_header">
-    <img src="icon.jpg" id="icon"/>
-  </div>
-  <footer>
-     <div class="footerColumn" id="initialFooter">
-      <p class="footerHeaders">About Us</p>
-      <p class="centralised"><a href="aboutUs.html">Rase Outdoor Living</a></p>
-      <p class="centralised"><a href="#" onclick="window.open('http://www.brustor.com/en');
-    window.open('https://www.prostor.be/');">Suppliers</a></p>
+  	<div id="footer_header">
+    	<img src="icon.jpg" id="icon"/>
+  	</div>
+  	<footer>
+     	<div class="footerColumn" id="initialFooter">
+			<p class="footerHeaders">About Us</p>
+			<p class="centralised"><a href="aboutUs.html">Rase Outdoor Living</a></p>
+			<p class="centralised"><a href="#" onclick="window.open('http://www.brustor.com/en');window.open('https://www.prostor.be/');">Suppliers</a></p>
 			<p id="empty"><br/></p>
-    </div>
-     <div class="footerColumn">
-      <p class="footerHeaders">Our Products</p>
+    	</div>
+     	<div class="footerColumn">
+			<p class="footerHeaders">Our Products</p>
 			<p class="centralised"><a href="index.html">Pergolas</a></p>
-      <p class="centralised"><a href="index.html">Awnings</a></p>
-      <p class="centralised"><a href="index.html">Parasols</a></p>
-    </div>
-     <div class="footerColumn">
-      <p class="footerHeaders" id="align">Help</p>
-      <p class="centralised"><a href="contact.html">Any enquiries?</a></p>
-      <p class="centralised"><a href="aboutUs.html">Contact Details</a></p>
+			<p class="centralised"><a href="index.html">Awnings</a></p>
+			<p class="centralised"><a href="index.html">Parasols</a></p>
+		</div>
+		<div class="footerColumn">
+			<p class="footerHeaders" id="align">Help</p>
+			<p class="centralised"><a href="contact.html">Any enquiries?</a></p>
+			<p class="centralised"><a href="aboutUs.html">Contact Details</a></p>
 			<p id="empty"><br/></p>
-    </div>
-     <div class="footerColumn" id="finalFooter">
-      <p class="footerHeaders">Follow Us</p>
-      <p class="centralised"><a href="https://www.instagram.com/raseoutdoor/">Instagram</a></p>
-      <p class="centralised"><a href="https://www.facebook.com/Raseoutdoorliving/">Facebook</a></p>
-      <p class="centralised"><a href="https://twitter.com/RaseOutdoor">Twitter</a></p>
-    </div>
-  </footer>
-
-
+		</div>
+		<div class="footerColumn" id="finalFooter">
+			<p class="footerHeaders">Follow Us</p>
+			<p class="centralised"><a href="https://www.instagram.com/raseoutdoor/">Instagram</a></p>
+			<p class="centralised"><a href="https://www.facebook.com/Raseoutdoorliving/">Facebook</a></p>
+			<p class="centralised"><a href="https://twitter.com/RaseOutdoor">Twitter</a></p>
+		</div>
+	</footer>
 </html>
