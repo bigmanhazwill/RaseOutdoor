@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style20.css">
+	</head>
+	<body>
+			<nav>
+				<a href="index.html" id="first"> HOME </a>
+				<a> GALLERY </a>
+				<a> CONTACT </a>
+				<a> OUR PRODUCTS </a>
+				<div id="logoD"><img src="images/logo.png" id="logo"></div>
+				<a href="https://www.pinterest.co.uk/Contemporary_Pergolas/" class="social"><img src="images/pinterest.png" id="pinterest"></a>
+				<a href="https://www.instagram.com/raseoutdoor/" class="social"><img src="images/instagram.png" id="instagram"></a>
+				<a href="https://twitter.com/RaseOutdoor" class="social"><img src="images/twitter.png" id="twitter"></a>
+				<a href="https://www.facebook.com/Raseoutdoorliving/" class="social"><img src="images/facebook.png" id="facebook"></a>
+				
+			</nav>
+		
+		
+		<div id="linkReel" >
+						
+	
+			  <div class="mySlides">
+				<img src="photos/_BRU0026.jpg" style="width:100%">
+				<div id="center"><div class="text">See how our products would look in your outdoor space. Try our simulator here</div></div>
+			  </div>
+			  <div class="mySlides">
+				<img src="photos/crowne-plaza-bioklimatska-pergola-02_6.jpg" style="width:100%">
+				<div id="center"><div class="text">See our latest projects</div></div>
+			  </div>
+			  
+			  <div class="mySlides">
+				<img src="photos/gardenPergola.jpg" style="width:100%">
+				<div id="center"><div class="text">Browse our range of pergolas</div></div>
+			  </div>
+			  
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		
+		<div class="dotCont">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		</div>
+		
+<head>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var texts = document.getElementsByClassName("text");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1;}    
+		  if (n < 1) {slideIndex = slides.length;}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  texts[slideIndex-1].className += " visible";
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+</head>
+		<div id="boxes">
+			<div id="welcome">
+				<h1>Contemporary Pergolas, Awnings and Parasols</h1>
+				<p>
+	Rase Outdoor Living is a supplier and installer of aluminium pergolas, awnings and parasols for your garden. Our products will add to your structure, with our contemporary garden pergola becoming a true focal point. Each individual pergola is made to measure in the Brustor Factory according to customers requirements. The contemporary products have a range of innovative features, our garden pergola contains rotatable louvres and automated sides. 
+	<br/><br/>From survey to commissioning we can take care of everything for you.</p>
+			</div><!--
+			--><div id="contactB">
+				
+			</div>
+		</div>
+		<div id="vid">
+	
+			<iframe width="854" height="480" src="https://www.youtube.com/embed/Q2Bso38FvAs?&listType=playlist&list=PLjDwsNhkxpTJoU3Lwn_Z-bhDvbT_CxBsX&autoplay=1&cc_load_policy=1.&loop=1&playlist=Q2Bso38FvAs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe
+		</div>
+	
+	<div class= "footer"> </div>
+
+	</body>
+	
+	
+</html>

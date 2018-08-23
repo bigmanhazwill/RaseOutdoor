@@ -1,0 +1,264 @@
+#py1 {
+    margin: 0;
+    position: relative;
+    display: block;
+    
+}
+
+#py2 {
+    margin: 0;
+    
+    position: relative;
+    display: block;
+}
+
+#py3 {
+    margin: 0;
+    
+    position: relative;
+    display: block;
+}
+
+#py3 .pink {
+    background-color: #ffa7e5e1
+}
+
+.mySlides2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    margin: 0 0 0.1px 0;
+	opacity: 1;
+	text-align: center;
+}
+
+#openSlide {
+    position: absolute;
+    bottom: 0;
+    left: 46.25%;
+    width: 8%;
+    height: 75px;
+    z-index: 10;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px 0;
+    background-color: #2ee18ddc;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#openSlide img {
+    height: max-content;
+    width: 60%;
+    margin: 12px 0;
+    height: 40px;
+    vertical-align: middle;
+}
+
+#openSlide2 {
+    position: absolute;
+    bottom: 0;
+    left: 46.25%;
+    width: 8%;
+    height: 75px;
+    z-index: 10;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px 0;
+    background-color: #2ee18ddc;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#openSlide2 img {
+    height: max-content;
+    width: 60%;
+    margin: 12px 0;
+    height: 40px;
+    vertical-align: middle;
+}
+
+#pergSlide {
+    position: absolute;
+    z-index: 10;
+    background-color:rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 1.2em;
+    top: 50%;
+    left: 0;
+    vertical-align: middle;
+    font-family: avenir;
+    height: min-content;
+    width: max-content;
+}
+
+#pergSlide .mainT {
+    font-size: 1.9em;
+    padding: 20px 15px;
+    border-right: 1px solid white;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 1.1% 5px;
+}
+
+#pergSlide .otherT {
+    padding: 20px 30px;
+    vertical-align: middle;
+    margin: 1.1% 5px;
+    display: inline-block;
+    word-spacing: 1px;
+}
+
+#py2 .orange {
+    background-color: #ffa755da
+}
+
+
+#pergO {
+    padding: 0;
+    margin: 0;
+    width: 14%;
+    height: auto;
+    float: left;
+    display:block;
+    opacity: 0.95;
+}
+
+#pergOptions {
+    display: none;
+    height: 100px;
+    width: 100vw;
+    position: relative;
+}
+
+#pergOptions .option {
+    margin: 20px 0;
+    width: auto;
+    border-right: solid 1px grey;
+    font-family: avenir;
+    color: grey;
+    font-size: 3em;
+    padding: 0 25px;
+    height: 60px;
+    display: inline-block;
+}
+#parOptions {
+    display: none;
+    height: 100px;
+    width: 100vw;
+    position: relative;
+}
+
+#parOptions .option {
+    margin: 20px 0;
+    width: auto;
+    border-right: solid 1px grey;
+    font-family: avenir;
+    color: grey;
+    font-size: 3em;
+    padding: 0 25px;
+    height: 60px;
+    display: inline-block;
+}
+
+.mySlides2 img {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.mySlides3 img {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.mySlides3 {
+    position: relative;
+    top: 0;
+	left: 0;
+    margin: 0;
+    opacity: 1;
+    height: 100vh;
+	text-align: center;
+}
+
+.dotCont2 {
+    position: absolute;
+    bottom: 20%;
+    width: 4%;
+    margin: 0 auto;
+}
+
+.prev3, .next3 {
+    cursor: pointer;
+    position: absolute;
+    top: 150%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+
+.prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 150%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev2:hover, .next2:hover {
+    color: black;
+  }
+
+  .next3 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev3:hover, .next3:hover {
+    color: black;
+  }
+
+  .flip {
+    transition-duration: 1s;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+
+  .mySlides4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    margin: 0 0 0.1px 0;
+	opacity: 1;
+	text-align: center;
+}
+
+.mySlides4 img {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+  

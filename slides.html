@@ -1,0 +1,80 @@
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            background-color: black;
+            width: 100vw;
+            height: 100vw;
+            overflow: hidden;
+        }
+        .myslides {
+            width: 100vw;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <img class="mySlides w3-animate-fading" src="Pictures/_BRU0020.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/_BRU0021.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/_BRU0026.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/_bru0068_realisatie_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/_bru0075_realisatie_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/_bru0119_3.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/1_lr_25.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/2_lr_24.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/3_realisatie_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/umbrella/4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/umbrella/5.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/4_lr_18.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/4_lr_22 copy.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/7_lr_31.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/7_web_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/10_web_1_5.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/11_lr_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/12_lr_11.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/13_lr_8.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/13_web_3.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/14_web_9.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/14 2.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/24.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/umbrella/2.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/umbrella/3.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/29_lr_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/31_web_10.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/20150910_122334_web_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/20150910_122625_resized_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b-200-anthracite-coupled-jardins_img_2402-high-res.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b-200-anthracite-window-cafe_03-bru-25-corr.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b-200-anthracite-window-cafe_11-bru-29-corr.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b-200-white-screens-dog_bru0015.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/B200 Map 16 fotoshoot 2015 (5) copy.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b200_map12_fotoshoot_2015_8_realisatie_3.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b200_map12_fotoshoot_2015_9_realisatie_3.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/b300_-_map_6_fotoshoot2015_1_realisatie_4.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/2_lr_24.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/6_lr_24.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/IMG_2189.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/galleryBackground copy.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/Brustor B-200 Outdoor Living white motor.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/crowne-plaza-bioklimatska-pergola-02_6.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/IMG_6298.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/umbrella/1.jpg">
+    <img class="mySlides w3-animate-fading" src="Pictures/umbrella/6.jpg">
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 7000);    
+}
+</script>
