@@ -99,6 +99,19 @@
                         d=0;
                     }
                 });
+
+                $("#openSlide3").click(function() {
+                    $('#optionArrow3').toggleClass('flip');
+                    if (d==0) {
+                        // $('#custBox').toggleClass('height');
+                        $('#awnOptions').fadeIn(1100);
+                        d = 1;
+                    } else {
+                        // $('#custBox').toggleClass('height');
+                        $('#awnOptions').fadeOut(100);
+                        d=0;
+                    }
+                });
             });
         </script>
     </head>
@@ -191,7 +204,7 @@
 
     <div id="py3">
         <div id="pergSlide"><img src="awnO.jpg" id="pergO"><span class="mainT">AWNING</span> <span class="otherT">Varying Parasols of Differing Complexity and Design</span></div>
-        <div id=openSlide2 class="pink"><img id="optionArrow2" src="arrowS.png"></div>
+        <div id=openSlide3 class="pink"><img id="optionArrow3" src="arrowS.png"></div>
         <div class="mySlides4">
             <img src="photos/_BRU0026.jpg" style="width:100%">
         </div>
@@ -209,6 +222,14 @@
         <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
 
         
+    </div>
+    <div id="awnOptions">
+        <div class="option">B150</div>
+        <div class="option">B150XL</div>
+        <div class="option">B200</div>
+        <div class="option">B200XL</div>
+        <div class="option">B150</div>
+        <div class="option">B150</div>
     </div>
         
 <head>
@@ -313,23 +334,6 @@
     </head>
     
 <div>
-<div id="b1" class="productBox">
-    <h1>Features</h1>
-    <a id="l1" class="aLink">&#x25BF</a>
-</div>
-
-<div id="featBox">
-    <div class="colBox">
-        <img src="https://cnet3.cbsistatic.com/img/c2sua4Gi-GxlbWZFFxvAdpzpbWE=/970x0/2016/01/15/1a347de6-6266-40ab-92dc-0d49fec8c6f7/somfy-smart-blindes-product-photos-2.jpg" />
-        <h3 class="headB">Somfy Remote Control</h3>
-        <p>
-            The pergola can be operated from a distance with the supplied Somfy remote control. The 
-            remote gives you the ability to alter the louvred roof, dim the pergola's lighting to an any
-            level, as well as easily allowing you to change the side screens to any position. The remote also
-            also works with alexa so can be voice controlled.
-        </p>
-    </div>
-</div>
 
     </main>
 
