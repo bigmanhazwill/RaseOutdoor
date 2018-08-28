@@ -2,8 +2,21 @@
     margin: 0;
     position: relative;
     display: block;
-    
+    height: 100vh;
 }
+
+.carousel-inner > .item > img {
+    height: 100vh;
+    margin: 0;
+    display: block;
+    border: none;
+    padding: 0;
+  }
+
+  .carousel-inner > .next {
+    margin: 0;
+    padding: 0;
+  }
 
 #py2 {
     margin: 0;
@@ -30,7 +43,7 @@
     height: 100vh;
     margin: 0 0 0.1px 0;
 	opacity: 1;
-	text-align: center;
+    text-align: center;
 }
 
 #openSlide {
