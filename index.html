@@ -6,6 +6,9 @@
 		<link rel="stylesheet" href="optimized_contents/css/style1.css">
 		<link rel="stylesheet" href="optimized_contents/css/style2.css">
 		<link rel="stylesheet" href="optimized_contents/css/style3.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.bgswitcher.js"></script>
 		<script type="text/javascript" src="menu.js"></script>
 		<script>
         	function closeFunction() {
@@ -25,7 +28,7 @@
 			<a href="index.html" id="first"> HOME </a>
 			<a href="gallery.html" > GALLERY </a>
 			<a href="contact.html" > CONTACT </a>
-			<a href="products.html" > OUR PRODUCTS </a>
+			<a href="ourproducts.html" > OUR PRODUCTS </a>
 			<div id="logoD"><img src="images/logo.png" id="logo"></div>
 			<a href="https://www.pinterest.co.uk/Contemporary_Pergolas/" class="socialI"><img src="images/pinterest.png" id="pinterest"></a>
 			<a href="https://www.instagram.com/raseoutdoor/" class="socialI"><img src="images/instagram.png" id="instagram"></a>
@@ -70,39 +73,48 @@
 				<span class="dot" onclick="currentSlide(3)"></span> 
 			</div>
 		</div>
+			
+	<head>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var texts = document.getElementsByClassName("text");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1;}    
+			if (n < 1) {slideIndex = slides.length;}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			texts[slideIndex-1].className += " visible";
+			dots[slideIndex-1].className += " active";
+			}
+		</script>
+	</head>
+
+	<div class="white-block">
 		
-<head>
-	<script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-		
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-		
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var texts = document.getElementsByClassName("text");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1;}    
-		  if (n < 1) {slideIndex = slides.length;}
-		  for (i = 0; i < slides.length; i++) {
-			  slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			  dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  texts[slideIndex-1].className += " visible";
-		  dots[slideIndex-1].className += " active";
-		}
-	</script>
-</head>
+	</div> 
+
+	<div class="cd-fixed-bg cd-fixed-bg--1">
+		<div class="shadow-box"></div>
+		<h1>We have a wide range of products we distribute across the whole of the UK.</h1>
+	</div> 
 
 		<div id="boxes" >
 			<div id="welcome">
@@ -131,6 +143,135 @@
 		</div>
 	  </div>
 	</body>
+
+
+	<div class="cd-fixed-bg cd-fixed-bg--2">
+		<div class="shadow-box"></div>
+		<h1 class="position2">Our unique products will enhance your outdoor space.</h1>
+	</div>  
+
+
+	<main>
+
+		<h1 class='leading'>Explore why our pergola's are trending worldwide:</h1>
+		
+		<!-- <p id="pergolaIntroP">
+			Click on the button to the left and scroll through the page to find out why our pergola's are trending worldwide
+			and have been featured in the Chelsea Flower Show. Read more to find out just why you should be interested in getting
+			one!
+			<br/><br/>
+			<span style="font-size: 20px; font-weight: 100;">&larr; Start by clicking the information button</span>
+		</p> -->
+		<script>
+				var slideIndex = 0;
+				showDivs(slideIndex);
+				
+				function plusDivs(n) {
+						showDivs(slideIndex += n);
+				}
+				
+				function showDivs(n) {
+						var i;
+						var x = document.getElementsByClassName("line");
+						var y = document.getElementsByClassName("line2");
+						var z = document.getElementsByClassName("desc");
+						if (n > x.length)
+							{slideIndex = 1;}
+						if (n < 1) {slideIndex = x.length;}
+						for (i = 0; i < x.length; i++) {
+								x[i].style.opacity = 0; 
+						}
+						x[slideIndex-1].style.opacity = 1;
+						for (i = 0; i < y.length; i++) {
+								y[i].style.opacity = 0; 
+						}
+						if (slideIndex==3) {
+						 y[0].style.opacity = 1;
+						}
+						if (slideIndex==4) {
+						 y[1].style.opacity = 1;
+						}
+						for (i = 0; i < z.length; i++) {
+								z[i].style.opacity = 0; 
+						}
+						z[slideIndex-1].style.opacity = 1;
+				}	
+			</script>
+		
+		<div id="slideshow">
+			<div id="line1" class="line invisible"></div>
+			<div id="description1" class="desc invisible"> Our pergola has neatly hidden sides that can be raised and lowered at any time to keep in heat or increase the space.
+			When fully raised they are completely hidden, these sides can be made up of any material and colour from our catalogue, including see through materials to act as windows!</div>
+			<div id="line2" class="line invisible"></div>
+			<div id="description2" class="desc invisible"> The roof of our pergola is made from cleverly designed S-shape louvres which can rotate in all directions in order to get as much sunlight in as possible!
+			They also are easily closed which allows you to still enjoy the extra space and outdoor living even if the weather turns!</div>
+			<div id="line3" class="line invisible"></div>
+			<div id="line4" class="line2 invisible"></div>
+			<div id="description3" class="desc invisible"> Specially developed lights can be modeled to your requirements, with our L.E.D. strips being able to take any colour under the rainbow.
+			These lights are powerful yet subtle, and can be placed anywhere on the pergola: In the louvres, down the legs and on the outside! These verstatile lights make the pergola stand out at night time.</div>
+			<div id="line5" class="line invisible"></div>
+			<div id="line6" class="line2 invisible"></div>
+			<div id="description4" class="desc invisible"> The pergola can stand alone on 4 feet or also be made to lean on your house, requiring only 2 feet! The feet are securely fastened down by our construction team and the pergola has
+			a 5 year warranty as we guarentee it is long lasting. The legs also have in built drainage systems which deal with rainwater and help you stay dry!</div>
+			<button id="slideLeft" class="slideArrow openMenu" onclick="plusDivs(-1);"> &#10094;</button>
+			<button id="slideRight" class="slideArrow openMenu" onclick="plusDivs(+1);"> &#10095;</button>
+			<!--<div class="centered"><button id="begin">Start Slideshow</button></div>-->
+			<img src="diagram2.png" id="slideImg" />
+		</div>
+		
+		
+		</main>
+
+
+		<div id="cheeky" class="cd-fixed-bg cd-fixed-bg--3">
+				<div class="shadow-box"></div>
+				<h1 class="position2">Check out our newest model!</h1>
+		</div> 
+
+		<script>
+
+			// [
+			// 	'Pictures/seq1.jpg',
+			// 	'Pictures/seq2.jpg',
+			// 	'Pictures/seq3.jpg',
+			// 	'Pictures/seq4.jpg', 
+			// 	'Pictures/seq5.jpg' 
+			// ].forEach(function(url){
+			// 	new Image().src = url;
+			// });
+
+			function preload(arrayOfImages) {
+				$(arrayOfImages).each(function () {
+					var num = this[12];
+					num = 'num' + num.toString();
+					if ($("." + num)[0]){
+
+					} else {
+						$('<img />').attr('src',this).appendTo('body').hide().addClass(num);
+					}
+				});
+			}
+
+			// Usage:
+
+			preload(['Pictures/seq1.jpg','Pictures/seq2.jpg', 'Pictures/seq3.jpg', 'Pictures/seq4.jpg', 'Pictures/seq5.jpg' ]);
+			
+			var url = ['Pictures/seq1.jpg','Pictures/seq2.jpg',
+						'Pictures/seq3.jpg', 'Pictures/seq4.jpg', 
+						'Pictures/seq5.jpg' ];
+
+			curentImageIndex = 1;
+			setInterval(function(){ 
+				var p = $('#cheeky');
+				var imagio = url[curentImageIndex++];
+
+				preload([imagio]);
+				var nextimage = "url("+imagio+ ")";
+				p.css("background-image", nextimage);
+				if(curentImageIndex>= url.length){curentImageIndex = 0}
+			}, 2000);
+		</script>
+	  
 
 	<div id="biggo" class="mob">
 		<div id="footer_header">

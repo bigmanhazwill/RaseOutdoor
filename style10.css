@@ -28,7 +28,7 @@ body,html {
 	background-color: transparent;
 	width: 75vw;
 	height: 65vh;
-	margin: 70vh auto 10px auto;
+	margin: 70vh auto 120px auto;
 }
 
 #vid iframe {
@@ -253,7 +253,7 @@ nav a:hover {
 }
 
 #boxes {
-	margin: 52vw 0vw 0vh 0vw;
+	margin: 50px 0vw 0vh 0vw;
 	padding: 2vh 0 0 0;
 	width: 100%;
 	position: relative;
@@ -1616,6 +1616,73 @@ border: solid black 0.1px;
 	font-size: 1.6em;
 }
 
+.cd-fixed-bg.cd-fixed-bg--1 {
+	background-image: url("Pictures/umbrella/umb2.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--2 {
+	background-image: url("Pictures/umbrella/per1.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--3 {
+	background-image: url("Pictures/seq1.jpg");
+}
+
+
+.cd-fixed-bg {  
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	z-index: 1;
+}
+
+.shadow-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.2;
+	background: black;
+}
+
+.cd-fixed-bg h1 {
+	color: white;
+	font-family: avenir;
+	opacity: 1;
+	position: absolute;
+	top: 45vh;
+	z-index: 1;
+	width: 64vw;
+	left: 10vw;
+	font-size: 4em;
+}
+
+.cd-fixed-bg h1.position2 {
+	top: 8vh;
+	width: 58vw;
+	left: 42vw;
+	font-size: 4em;
+}
+
+.white-block {
+	height: 86vh;
+	width: 100vw;
+	background: white;
+	margin: 5vh 0 0 0;
+}
+
+.leading {
+	text-align: center;
+	margin: 50px 50px 10px 5vw;
+	width: 40vw;
+	font-family: avenir;
+	opacity: 0.725;
+}
+
 .productBox {
 	width: 90%;
 	text-align: left;
@@ -1971,7 +2038,7 @@ background-color:	#FCFFFF;
 		background-color: transparent;
 		width: 90vw;
 		height: 250px;
-		margin: 745px auto 10px auto;
+		margin: 745px auto 500px auto;
 	}
 
 	#boxes {
