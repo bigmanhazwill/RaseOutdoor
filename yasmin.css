@@ -1,3 +1,9 @@
+body {
+    font-size: initial;
+}
+
+
+
 #py1 {
     margin: 0;
     position: relative;
@@ -31,6 +37,11 @@
 
 a {
     color: black;
+    font-size: 0.85em;
+}
+
+nav a {
+    font-size: 0.85em !important;
 }
 
 
