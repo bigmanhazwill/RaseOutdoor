@@ -2,8 +2,21 @@
     margin: 0;
     position: relative;
     display: block;
-    
+    height: 100vh;
 }
+
+.carousel-inner > .item > img {
+    height: 100vh;
+    margin: 0;
+    display: block;
+    border: none;
+    padding: 0;
+  }
+
+  .carousel-inner > .next {
+    margin: 0;
+    padding: 0;
+  }
 
 #py2 {
     margin: 0;
@@ -19,7 +32,7 @@
     display: block;
 }
 
-#py3 .pink {
+#openSlide3.pink {
     background-color: #ffa7e5e1
 }
 
@@ -30,7 +43,7 @@
     height: 100vh;
     margin: 0 0 0.1px 0;
 	opacity: 1;
-	text-align: center;
+    text-align: center;
 }
 
 #openSlide {
@@ -133,7 +146,7 @@
     word-spacing: 1px;
 }
 
-#py2 .orange {
+#openSlide2.orange {
     background-color: #ffa755da
 }
 
@@ -153,6 +166,7 @@
     height: 100px;
     width: 100vw;
     position: relative;
+    text-align: center;
 }
 
 #pergOptions .option {
@@ -172,6 +186,11 @@
     height: 100px;
     width: 100vw;
     position: relative;
+    text-align: center;
+}
+
+#slideshow {
+    margin-top: 100px;
 }
 
 #parOptions .option {
@@ -191,6 +210,7 @@
     height: 100px;
     width: 100vw;
     position: relative;
+    text-align: center;
 }
 
 #awnOptions .option {
