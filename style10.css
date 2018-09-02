@@ -1623,7 +1623,7 @@ border: solid black 0.1px;
 .aligning a:hover {
 	padding: 0 0px 8px 0px; 
     border-bottom: 1px solid black;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .cd-fixed-bg.cd-fixed-bg--1 {
