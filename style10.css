@@ -1,6 +1,12 @@
 body,html {
 	margin: 0;
 }
+#rightSide .topTitle {
+	display: none;
+	font-family: avenir;
+	margin: 0 0 10px 0;
+	font-weight: 200;
+}
 
 #linkReel {
 	background-color: transparent;
@@ -1855,6 +1861,29 @@ background-color:	#FCFFFF;
 }
 
 @media only screen and (max-width:550px){
+
+	#sideBox {
+		display: none;
+	}
+
+	#rightSide .topTitle {
+		display: block;
+	}
+
+	#rightSide {
+		width: 100vw;
+		margin-left: 0;
+	}
+
+	#rightSide > img {
+		margin-top:12vh;
+		width: 80vw;
+		margin-bottom: 10px;
+	}
+
+	.colBox {
+		width: 90%;
+	}
 
 	#imgId {
 		margin-top: 60px;
