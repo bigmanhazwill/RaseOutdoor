@@ -18,6 +18,26 @@
     padding: 0;
   }
 
+.option > a {
+    font-size: 0.7em;
+    
+}
+
+.option > a:hover {
+    padding: 0 12px 4px 12px; 
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+
+a:hover {
+    color: black;
+}
+
 #py2 {
     margin: 0;
     
@@ -171,14 +191,18 @@
 
 #pergOptions .option {
     margin: 20px 0;
-    width: auto;
+    width: 15vw;
     border-right: solid 1px grey;
     font-family: avenir;
     color: grey;
-    font-size: 3em;
-    padding: 0 25px;
+    font-size: 2.4em;
+    padding: 0 auto;
     height: 60px;
     display: inline-block;
+}
+
+#pergOptions .last {
+    border-right: none;
 }
 
 #parOptions {
@@ -195,14 +219,18 @@
 
 #parOptions .option {
     margin: 20px 0;
-    width: auto;
+    width: 20vw;
     border-right: solid 1px grey;
     font-family: avenir;
     color: grey;
-    font-size: 3em;
-    padding: 0 25px;
+    font-size: 2.4em;
+    padding: 0 auto;
     height: 60px;
     display: inline-block;
+}
+
+#parOptions .last {
+    border-right: none;
 }
 
 #awnOptions {
@@ -215,14 +243,18 @@
 
 #awnOptions .option {
     margin: 20px 0;
-    width: auto;
+    width: 25vw;
     border-right: solid 1px grey;
     font-family: avenir;
     color: grey;
-    font-size: 3em;
-    padding: 0 25px;
+    font-size: 2.4em;
+    padding: 0 auto;
     height: 60px;
     display: inline-block;
+}
+
+#awnOptions .last {
+    border-right: none;
 }
 
 .mySlides2 img {
