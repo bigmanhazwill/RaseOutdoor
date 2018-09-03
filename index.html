@@ -6,10 +6,13 @@
 		<link rel="stylesheet" href="optimized_contents/css/style1.css">
 		<link rel="stylesheet" href="optimized_contents/css/style2.css">
 		<link rel="stylesheet" href="optimized_contents/css/style3.css">
+		<meta name="viewport" content="width=1, , initial-scale=1">
+		<meta name="google-site-verification" content="lcGkN-i0Xazm167szC0m8jpG_MFQgt5rqAlx5UGCOkk" />
+		<meta name="viewport" content="height=1, initial-scale=1">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="js/jquery.bgswitcher.js"></script>
 		<script type="text/javascript" src="menu.js"></script>
+		
 		<script>
         	function closeFunction() {
 				var element = document.getElementById("notifications-full");
@@ -111,7 +114,8 @@
 		
 	</div> 
 
-	<div class="cd-fixed-bg cd-fixed-bg--1">
+	<div class="cd-fixed-bg">
+		<img class="atlast" src="Pictures/umbrella/umb2.jpg" style="height:100vh; "/>
 		<div class="shadow-box"></div>
 		<h1>We have a wide range of products we distribute across the whole of the UK.</h1>
 	</div> 
@@ -145,13 +149,14 @@
 	</body>
 
 
-	<div class="cd-fixed-bg cd-fixed-bg--2">
+	<div class="cd-fixed-bg ">
+		<img class="atlast" src="Pictures/umbrella/per1.jpg" style="height:100vh; "/>
 		<div class="shadow-box"></div>
 		<h1 class="position2">Our unique products will enhance your outdoor space.</h1>
 	</div>  
 
 
-	<main>
+	<main id="noshow">
 
 		<h1 class='leading'>Explore why our pergolas are trending worldwide:</h1>
 		
@@ -312,4 +317,80 @@
 		<img src="flower.jpeg" id="flower"/>
 	</div> -->
 
+
+	<script>
+			function swipedetect(el, callback){
+			
+			var touchsurface = el,
+			swipedir,
+			startX,
+			startY,
+			distX,
+			distY,
+			threshold = 150, //required min distance traveled to be considered swipe
+			restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+			allowedTime = 300, // maximum time allowed to travel that distance
+			elapsedTime,
+			startTime,
+			handleswipe = callback || function(swipedir){}
+
+			touchsurface.addEventListener('touchstart', function(e){
+				var touchobj = e.changedTouches[0]
+				swipedir = 'none'
+				dist = 0
+				startX = touchobj.pageX
+				startY = touchobj.pageY
+				startTime = new Date().getTime() // record time when finger first makes contact with surface
+				e.preventDefault()
+			}, false)
+
+			touchsurface.addEventListener('touchmove', function(e){
+				e.preventDefault() // prevent scrolling when inside DIV
+			}, false)
+
+			touchsurface.addEventListener('touchend', function(e){
+				var touchobj = e.changedTouches[0]
+				distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
+				distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
+				elapsedTime = new Date().getTime() - startTime // get time elapsed
+				if (elapsedTime <= allowedTime){ // first condition for awipe met
+					if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
+						swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
+					}
+					else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
+						swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
+					}
+				}
+				handleswipe(swipedir)
+				e.preventDefault()
+			}, false)
+			}
+
+			//USAGE:
+
+			var el = document.getElementById('linkReel');
+
+			swipedetect(el, function(swipedir){
+			// swipedir contains either "none", "left", "right", "top", or "down"
+				if( swipedir == 'left') {
+					plusSlides(1)
+				}
+
+				if( swipedir == 'right') {
+					plusSlides(-1)
+				}
+			});
+
+		</script>
+		<script>
+			$( document ).ready(function() {
+				// $('div.cd-fixed-bg').css("height", ($(window).height()));
+				// $('div.cd-fixed-bg').css("min-height", ($(window).height()));
+				// $('div.cd-fixed-bg').css("max-height", ($(window).height()));
+				$('div.cd-fixed-bg').css("background-size", 'cover');
+				
+			});
+			
+		</script>
+		
 </html>
